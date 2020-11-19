@@ -1,6 +1,5 @@
 <RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
+    <qresource prefix="/new/prefix1">
         <file>images/particle.png</file>
         <file>images/rocket.png</file>
         <file>images/star.png</file>

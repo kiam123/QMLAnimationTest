@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Bird.qml</file>
+        <file>Cloud.qml</file>
+        <file>QMLAnimation.qml</file>
+        <file>Star.qml</file>
+        <file>images.qrc</file>
+    </qresource>
+</RCC>

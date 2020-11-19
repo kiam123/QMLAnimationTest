@@ -26,34 +26,34 @@ Window {
     }
 
     ParallelAnimation {
-            id: anim
-            SequentialAnimation {
-                NumberAnimation {
-                    target: ball
-                    properties: "y"
-                    to: 20
-                    duration: root.duration * 0.4
-                    easing.type: Easing.OutCirc
-                }
-                NumberAnimation {
-                    target: ball
-                    properties: "y"
-                    to: 240
-                    duration: root.duration * 0.6
-                    easing.type: Easing.OutBounce
-                }
+        id: anim
+        SequentialAnimation {
+            NumberAnimation {
+                target: ball;
+                properties: "y";
+                to: 20;
+                duration: root.duration * 0.4;
+                easing.type: Easing.OutCirc;
             }
             NumberAnimation {
-                target: ball
-                properties: "x"
-                to: 400
-                duration: root.duration
-            }
-            RotationAnimation {
-                target: ball
-                properties: "rotation"
-                to: 720
-                duration: root.duration * 1.1
+                target: ball;
+                properties: "y";
+                to: 240;
+                duration: root.duration * 0.6;
+                easing.type: Easing.OutBounce;
             }
         }
+        NumberAnimation {
+            target: ball
+            properties: "x"
+            to: 400
+            duration: root.duration
+        }
+        RotationAnimation {
+            target: ball
+            properties: "rotation"
+            to: 720
+            duration: root.duration * 1.1
+        }
+    }
 }

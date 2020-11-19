@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>boat.png</file>
+        <file>cover.png</file>
+        <file>day.png</file>
+        <file>moon.png</file>
+        <file>mountain.png</file>
+        <file>night.png</file>
+        <file>star.png</file>
+        <file>wing.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MotionItem.qml</file>
+        <file>ScaleAnimation.qml</file>
+        <file>FlipableRightToLeft.qml</file>
+    </qresource>
+    <qresource prefix="/images"/>
+</RCC>
