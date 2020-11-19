@@ -1,5 +1,7 @@
 import QtQuick 2.4
 
+//10.文字旋轉完後+放大
+//TODO 放大還沒做
 Flipable {
     id: flipable
     width: 240

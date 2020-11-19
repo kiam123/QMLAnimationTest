@@ -10,10 +10,6 @@ Window {
     title: qsTr("Hello World")
     property var count: 0;
     property var component: [];
-
-    property var count2: 0;
-    property var component2: [];
-
     Button {
         id: btn;
         x: 35
@@ -81,7 +77,7 @@ Window {
     }
 
     function createComponent() {
-        rootItem.component.push(Qt.createComponent("FlipableRightToLeft.qml"));
+        rootItem.component.push(Qt.createComponent("JumpIn.qml"));
         console.log(typeof rootItem.component[count]);
         var item;
         if(rootItem.component[count].status === Component.Ready) {

@@ -4,6 +4,7 @@
         <file>MotionItem.qml</file>
         <file>ScaleAnimation.qml</file>
         <file>FlipableRightToLeft.qml</file>
+        <file>JumpIn.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>
