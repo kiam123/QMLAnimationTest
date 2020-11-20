@@ -25,13 +25,13 @@ Window {
             }
         ]
 
-        transitions: [
-            Transition {
-                from: "stop"; to: "go"
-                ColorAnimation { target: light1; properties: "color"; duration: 2000 }
-                ColorAnimation { target: light2; properties: "color"; duration: 2000 }
-            }
-        ]
+//        transitions: [
+//            Transition {
+//                from: "stop"; to: "go"
+//                ColorAnimation { target: light1; properties: "color"; duration: 2000 }
+//                ColorAnimation { target: light2; properties: "color"; duration: 2000 }
+//            }
+//        ]
 
         Rectangle {
             id: light1
@@ -40,10 +40,10 @@ Window {
             radius: width/2
             color: "black"
 
-            MouseArea {
-                anchors.fill: parent
-                onClicked: parent.state = (parent.state == "stop"? "go" : "stop")
-            }
+//            MouseArea {
+//                anchors.fill: parent
+//                onClicked: parent.state = (parent.state == "stop"? "go" : "stop")
+//            }
         }
 
         Rectangle {
@@ -53,10 +53,10 @@ Window {
             radius: width/2
             color: "black"
 
-            MouseArea {
-                anchors.fill: parent
-                onClicked: parent.state = (parent.state == "stop"? "go" : "stop")
-            }
+//            MouseArea {
+//                anchors.fill: parent
+//                onClicked: parent.state = (parent.state == "stop"? "go" : "stop")
+//            }
         }
 
         Button {

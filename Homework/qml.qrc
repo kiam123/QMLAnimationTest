@@ -1,10 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MotionItem.qml</file>
+        <file>TempItem.qml</file>
         <file>ScaleAnimation.qml</file>
         <file>FlipableRightToLeft.qml</file>
         <file>JumpIn.qml</file>
+        <file>Marquee.qml</file>
+        <file>FadeInWithFadeOut.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>

@@ -9,7 +9,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
     property var count: 0;
-    property var component: [];
+    property var components: [];
     Button {
         id: btn;
         x: 35
@@ -77,13 +77,13 @@ Window {
     }
 
     function createComponent() {
-        rootItem.component.push(Qt.createComponent("JumpIn.qml"));
-        console.log(typeof rootItem.component[count]);
+        rootItem.components.push(Qt.createComponent("FadeInWithFadeOut.qml"));
+        console.log(typeof rootItem.components[count]);
         var item;
-        if(rootItem.component[count].status === Component.Ready) {
-            item = rootItem.component[count].createObject(rootItem, {objectName: count, "x": rootItem.count * 55, "y": 0});
+        if(rootItem.components[count].status === Component.Ready) {
+            item = rootItem.components[count].createObject(rootItem, {objectName: count, "x": rootItem.count * 55, "y": 0});
         }
-        console.log(typeof item);
+        console.log(typeof item,' omg ',count);
 
         count++;
     }

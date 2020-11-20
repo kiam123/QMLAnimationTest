@@ -17,7 +17,7 @@ Window {
     Emitter {
         id: emitter
         anchors.centerIn: parent
-        width: 160; height: 80
+        width: 50; height: 50
         system: particleSystem
         emitRate: 10
         lifeSpan: 1000
