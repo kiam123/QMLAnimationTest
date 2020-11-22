@@ -7,6 +7,10 @@
         <file>JumpIn.qml</file>
         <file>Marquee.qml</file>
         <file>FadeInWithFadeOut.qml</file>
+        <file>Test.qml</file>
+        <file>RotationWithFlyIn.qml</file>
+        <file>WaveAnimation.qml</file>
+        <file>MarqueeText.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>

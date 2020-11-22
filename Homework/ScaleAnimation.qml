@@ -4,8 +4,8 @@ import QtQuick 2.0
 //放大縮小
 Rectangle {
     id: rect;
-    width: 50;
-    height: 50;
+    width: 0;
+    height: 0;
     anchors.centerIn: parent;
     color: "blue";
     property var animation;
@@ -32,15 +32,23 @@ Rectangle {
         }
     }
 
-    MouseArea {
-        anchors.fill: parent;
-        onClicked: {
-            if(rect.animation === shrink || rect.animation === undefined) {
-                enlarge.start();
-            } else {
-                shrink.start();
-            }
+    Component.onCompleted: {
+        if(rect.animation === shrink || rect.animation === undefined) {
+            enlarge.start();
+        } else {
+            shrink.start();
         }
-
     }
+
+//    MouseArea {
+//        anchors.fill: parent;
+//        onClicked: {
+//            if(rect.animation === shrink || rect.animation === undefined) {
+//                enlarge.start();
+//            } else {
+//                shrink.start();
+//            }
+//        }
+
+//    }
 }

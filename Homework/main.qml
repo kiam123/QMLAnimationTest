@@ -77,11 +77,11 @@ Window {
     }
 
     function createComponent() {
-        rootItem.components.push(Qt.createComponent("FadeInWithFadeOut.qml"));
+        rootItem.components.push(Qt.createComponent("MarqueeText.qml"));
         console.log(typeof rootItem.components[count]);
         var item;
         if(rootItem.components[count].status === Component.Ready) {
-            item = rootItem.components[count].createObject(rootItem, {objectName: count, "x": rootItem.count * 55, "y": 0});
+            item = rootItem.components[count].createObject(rootItem);
         }
         console.log(typeof item,' omg ',count);
 

@@ -1,6 +1,6 @@
 import QtQuick 2.0
 
-// 11.跳進來
+// 11.彈跳進來
 Rectangle {
     id: rect_parallel;
     width: 100; height: 100; color: "purple";
