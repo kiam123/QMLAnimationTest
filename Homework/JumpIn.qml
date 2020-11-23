@@ -10,13 +10,15 @@ Rectangle {
         NumberAnimation {
             target: rect_parallel;
             properties: "x";
-            to: 300;
+            from: parent.height;
+            to: 0;
             duration: 2000;
         }
         NumberAnimation {
             target: rect_parallel;
             properties: "y";
-            to: 240;
+            from: 240;
+            to: 0;
             duration: 2000;
             easing.type: Easing.OutBounce;
         }

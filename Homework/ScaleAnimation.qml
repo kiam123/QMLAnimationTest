@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 
-//放大縮小
+//從小到大(放大)
 Rectangle {
     id: rect;
     width: 0;
@@ -10,35 +10,35 @@ Rectangle {
     color: "blue";
     property var animation;
 
-    PropertyAnimation {
-        id: enlarge;
-        target: rect;
-        properties: "width, height";
-        to: 150;
-        duration: 800;
-        onStarted: {
-            rect.animation = enlarge;
+    SequentialAnimation {
+        running: true;
+        PropertyAnimation {
+            id: enlarge;
+            target: rect;
+            properties: "width, height";
+            to: 150;
+            duration: 800;
+        }
+
+        PropertyAnimation {
+            id: shrink;
+            target: rect;
+            properties: "width, height";
+            to: 50;
+            duration: 800;
+            onDurationChanged: {
+                rect.anchors.centerIn = null;
+            }
         }
     }
 
-    PropertyAnimation {
-        id: shrink;
-        target: rect;
-        properties: "width, height";
-        to: 50;
-        duration: 800;
-        onStarted: {
-            rect.animation = shrink;
-        }
-    }
-
-    Component.onCompleted: {
-        if(rect.animation === shrink || rect.animation === undefined) {
-            enlarge.start();
-        } else {
-            shrink.start();
-        }
-    }
+//    Component.onCompleted: {
+//        if(rect.animation === shrink || rect.animation === undefined) {
+//            enlarge.start();
+//        } else {
+//            shrink.start();
+//        }
+//    }
 
 //    MouseArea {
 //        anchors.fill: parent;

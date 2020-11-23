@@ -4,12 +4,13 @@ import QtQuick.Controls 2.0
 
 Window {
     id: rootItem;
-    width: 640
-    height: 480
-    visible: true
-    title: qsTr("Hello World")
+    width: 640;
+    height: 480;
+    visible: true;
+    title: qsTr("Hello World");
     property var count: 0;
     property var components: [];
+
     Button {
         id: btn;
         x: 35
@@ -77,11 +78,11 @@ Window {
     }
 
     function createComponent() {
-        rootItem.components.push(Qt.createComponent("MarqueeText.qml"));
+        rootItem.components.push(Qt.createComponent("Flip.qml"));
         console.log(typeof rootItem.components[count]);
         var item;
         if(rootItem.components[count].status === Component.Ready) {
-            item = rootItem.components[count].createObject(rootItem);
+            item = rootItem.components[count].createObject(rootItem/*, {objectName: count, "x": rootItem.count * 55, "y": 0}*/);
         }
         console.log(typeof item,' omg ',count);
 

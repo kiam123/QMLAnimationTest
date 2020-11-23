@@ -11,6 +11,9 @@
         <file>RotationWithFlyIn.qml</file>
         <file>WaveAnimation.qml</file>
         <file>MarqueeText.qml</file>
+        <file>AppearOnetoOne.qml</file>
+        <file>ScaleAnimation2.qml</file>
+        <file>Flip.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>
