@@ -44,14 +44,21 @@ Item {
             angle: 0
         }
 
-
         states: State {
             name: "value_change"
-            PropertyChanges {target: rotation; angle: 180}
-            when: flipme_item.flip_now
+            PropertyChanges {
+                target: rotation;
+                angle: 180;
+            }
+            when: flipme_item.flip_now;
         }
+
         transitions: Transition {
-            NumberAnimation { target: rotation; property: "angle"; duration: 1000 }
+            NumberAnimation {
+                target: rotation;
+                property: "angle";
+                duration: 1000;
+            }
         }
     }
 

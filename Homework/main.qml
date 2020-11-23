@@ -78,7 +78,7 @@ Window {
     }
 
     function createComponent() {
-        rootItem.components.push(Qt.createComponent("Flip.qml"));
+        rootItem.components.push(Qt.createComponent("Marquee.qml"));
         console.log(typeof rootItem.components[count]);
         var item;
         if(rootItem.components[count].status === Component.Ready) {
