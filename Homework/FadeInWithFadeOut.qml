@@ -5,7 +5,7 @@ Image {
     id: rootItem;
     width: 100;
     height: 100;
-    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/crow.png";
+    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/crow.png";
     property var easingType: Easing.OutBounce;
     opacity: 0;
 
@@ -26,7 +26,7 @@ Image {
             properties: "opacity";
             from: 1;
             to: 0;
-            duration: 4000;
+            duration: 300;
         }
     }
 }

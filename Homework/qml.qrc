@@ -14,6 +14,7 @@
         <file>AppearOnetoOne.qml</file>
         <file>ScaleAnimation2.qml</file>
         <file>Flip.qml</file>
+        <file>MarqueeImageEmbedImage.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>

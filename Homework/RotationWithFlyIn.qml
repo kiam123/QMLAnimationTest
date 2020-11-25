@@ -1,9 +1,11 @@
 import QtQuick 2.0
 
 //陀螺旋轉+飛入
-Rectangle {
+Image {
     id: rect_parallel;
-    width: 100; height: 100; color: "purple";
+    width: 100;
+    height: 100;
+    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/family.png";
     antialiasing: true;
 
     states: State {

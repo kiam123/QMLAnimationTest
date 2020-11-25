@@ -9,7 +9,7 @@ Rectangle {
         id: item1;
         width: 70;
         height: 70;
-        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/love.png";
         opacity: 0;
         x: 60;
         y: 100;
@@ -19,7 +19,7 @@ Rectangle {
         id: item2;
         width: 70;
         height: 70;
-        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/love.png";
         opacity: 0;
         x: 30;
         y: 70;
@@ -29,7 +29,7 @@ Rectangle {
         id: item3;
         width: 70;
         height: 70;
-        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/love.png";
         opacity: 0;
         x: 90;
         y: 70;
@@ -39,7 +39,7 @@ Rectangle {
         id: item4;
         width: 70;
         height: 70;
-        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/love.png";
         opacity: 0;
         x: 60;
         y: 40;

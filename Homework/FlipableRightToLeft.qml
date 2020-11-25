@@ -9,41 +9,41 @@ Flipable {
 
     property bool flipped: false
 
-//    //圖片
-//    front: Image {
-//        x: 0;
-//        y: 0;
-//        z: 1;
-//        height: 50;
-//        width: 50;
-//        source: "qrc:/new/prefix1/images/rocket.png";
-//        anchors.centerIn: parent
-//    }
-//    back: Image {
-//        x: 0;
-//        y: 0;
-//        z: 1;
-//        id: image1;
-//        height: 50;
-//        width: 50;
-//        source: "qrc:/new/prefix1/images/star.png";
-//        anchors.centerIn: parent }
-
-    //文字
-    front: Text {
+    //圖片
+    front: Image {
+        x: 0;
+        y: 0;
         z: 1;
-        text: "123";
-        font.pointSize: 20;
-        anchors.centerIn: parent;
-    }
-    back: Text {
-        z: 1;
-        color:"red"
-        id: image1;
-        text: "123"
-        font.pointSize: 20;
+        height: 50;
+        width: 50;
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/圖片2.png";
         anchors.centerIn: parent
     }
+    back: Image {
+        x: 0;
+        y: 0;
+        z: 1;
+        id: image1;
+        height: 50;
+        width: 50;
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/圖片2.png";
+        anchors.centerIn: parent }
+
+//    //文字
+//    front: Text {
+//        z: 1;
+//        text: "123";
+//        font.pointSize: 20;
+//        anchors.centerIn: parent;
+//    }
+//    back: Text {
+//        z: 1;
+//        color:"red"
+//        id: image1;
+//        text: "123"
+//        font.pointSize: 20;
+//        anchors.centerIn: parent
+//    }
 
     transform: Rotation {
         id: rotation

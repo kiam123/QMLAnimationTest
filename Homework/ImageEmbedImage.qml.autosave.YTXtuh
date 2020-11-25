@@ -1,0 +1,13 @@
+import QtQuick 2.0
+
+Image {
+    id: imageText;
+    width: 70;
+    height: 70;
+    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow.png";
+    
+    Image {
+        anchors.centerIn: imageText;
+        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow=.png";
+    }
+}

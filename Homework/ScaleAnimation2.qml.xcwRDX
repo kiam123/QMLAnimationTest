@@ -43,14 +43,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x + 50;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y + 50;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -59,14 +59,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -75,14 +75,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x - 50;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y + 50;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -91,14 +91,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -107,14 +107,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x - 50;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y - 50;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -123,14 +123,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -139,14 +139,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x + 50;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y - 50;
-                    duration: 200;
+                    duration: 100;
                 }
             }
 
@@ -155,14 +155,14 @@ Rectangle {
                     target: rect;
                     properties: "x";
                     to: rect.x;
-                    duration: 200;
+                    duration: 100;
                 }
 
                 PropertyAnimation {
                     target: rect;
                     properties: "y";
                     to: rect.y;
-                    duration: 200;
+                    duration: 100;
                 }
             }
         }

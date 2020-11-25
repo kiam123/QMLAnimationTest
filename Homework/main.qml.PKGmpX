@@ -77,7 +77,7 @@ Window {
         }
     }
 
-    function createComponent(qmlFile = "ImageEmbedImage.qml") {
+    function createComponent(qmlFile = "RotationWithFlyIn.qml") {
         rootItem.components.push(Qt.createComponent(qmlFile));
         console.log(typeof rootItem.components[count]);
         var item;
@@ -111,7 +111,7 @@ Window {
                 createComponent("JumpIn.qml")
             } else if (event.key === Qt.Key_5) {
                 console.log("5....................");
-                createComponent("MarqueeImageEmbedImage.qml")
+                createComponent("Marquee.qml")
             } else if (event.key === Qt.Key_6) {
                 console.log("6....................");
                 createComponent("MarqueeText.qml")
