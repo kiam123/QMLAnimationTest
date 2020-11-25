@@ -1,6 +1,5 @@
 import QtQuick 2.2
 
-
 //從小到大(放大)+移動
 Rectangle {
     id: rect;

@@ -2,19 +2,61 @@ import QtQuick 2.0
 
 //一個一個動作出現
 Rectangle {
-    id: item
-    width: 50;
-    height: 50;
-    color: "red";
-    opacity: 0;
+    property var count: 0;
+    property var componentArr: [item1, item2, item3, item4];
 
-    NumberAnimation {
-        id: go
-        target: item;
+    Image {
+        id: item1;
+        width: 70;
+        height: 70;
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        opacity: 0;
+        x: 60;
+        y: 100;
+    }
+
+    Image {
+        id: item2;
+        width: 70;
+        height: 70;
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        opacity: 0;
+        x: 30;
+        y: 70;
+    }
+
+    Image {
+        id: item3;
+        width: 70;
+        height: 70;
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        opacity: 0;
+        x: 90;
+        y: 70;
+    }
+
+    Image {
+        id: item4;
+        width: 70;
+        height: 70;
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/love.png";
+        opacity: 0;
+        x: 60;
+        y: 40;
+    }
+
+
+    Timer {
         running: true;
-        duration: 1000;
-        properties: "opacity";
-        from: 0;
-        to: 1;
+        repeat: true;
+        interval: 100;
+        onTriggered: {
+            if(count > componentArr.length-1) {
+                count = 0;
+            }
+            componentArr[count].opacity = 1;
+            count++;
+        }
     }
 }
+

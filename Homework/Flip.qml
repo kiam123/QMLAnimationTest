@@ -1,10 +1,11 @@
 import QtQuick 2.0
 
 //倒數3,2,1
-Item {
+Rectangle {
     id: flipme_item
     width: 400
     height: 400
+    color: "transparent"
     property int total_count: 0
     property int front_img: 0
     property int back_img: 1
@@ -15,9 +16,11 @@ Item {
         id: flip_element;
         width: 70;
         height: 70;
+        z: 1;
         anchors.centerIn: parent;
         front: Text {
             id: frontText;
+	    z: 1;
             text: content[front_img];
             font.bold: true;
             font.pixelSize: 90;
@@ -28,6 +31,7 @@ Item {
 
         back: Text {
             id: backText;
+	    z: 1;
             text: content[back_img];
             font.pixelSize: 90;
             font.family: "Arial";

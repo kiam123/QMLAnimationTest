@@ -78,7 +78,7 @@ Window {
     }
 
     function createComponent() {
-        rootItem.components.push(Qt.createComponent("Marquee.qml"));
+        rootItem.components.push(Qt.createComponent("Flip.qml"));
         console.log(typeof rootItem.components[count]);
         var item;
         if(rootItem.components[count].status === Component.Ready) {
@@ -88,5 +88,35 @@ Window {
 
         count++;
     }
+
+    Item {
+        focus: true
+        Keys.onPressed: {
+            console.log("omg....................",event.key);
+
+            if (event.key === Qt.Key_0) {
+                console.log("0....................");
+            } else if (event.key === Qt.Key_1) {
+                console.log("1....................");
+            } else if (event.key === Qt.Key_2) {
+                console.log("2....................");
+            } else if (event.key === Qt.Key_3) {
+                console.log("3....................");
+            } else if (event.key === Qt.Key_4) {
+                console.log("4....................");
+            } else if (event.key === Qt.Key_5) {
+                console.log("5....................");
+            } else if (event.key === Qt.Key_6) {
+                console.log("6....................");
+            } else if (event.key === Qt.Key_7) {
+                console.log("7....................");
+            } else if (event.key === Qt.Key_8) {
+                console.log("8....................");
+            } else if (event.key === Qt.Key_9) {
+                console.log("9....................");
+            }
+        }
+    }
+
 
 }

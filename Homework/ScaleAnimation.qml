@@ -1,6 +1,5 @@
 import QtQuick 2.0
 
-
 //從小到大(放大)
 Rectangle {
     id: rect;
@@ -31,24 +30,4 @@ Rectangle {
             }
         }
     }
-
-//    Component.onCompleted: {
-//        if(rect.animation === shrink || rect.animation === undefined) {
-//            enlarge.start();
-//        } else {
-//            shrink.start();
-//        }
-//    }
-
-//    MouseArea {
-//        anchors.fill: parent;
-//        onClicked: {
-//            if(rect.animation === shrink || rect.animation === undefined) {
-//                enlarge.start();
-//            } else {
-//                shrink.start();
-//            }
-//        }
-
-//    }
 }

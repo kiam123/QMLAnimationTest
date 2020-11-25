@@ -1,4 +1,4 @@
-import QtQuick 2.7
+import QtQuick 2.0
 
 //陀螺旋轉+飛入
 Rectangle {
@@ -20,11 +20,11 @@ Rectangle {
                 target: rect_parallel;
                 properties: "x";
                 to: 300;
-                duration: 2000;
+                duration: 1000;
             }
 
             RotationAnimation {
-                duration: 2000;
+                duration: 1000;
                 direction: RotationAnimation.Counterclockwise;
             }
         }
