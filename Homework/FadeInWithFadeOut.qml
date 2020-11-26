@@ -5,7 +5,7 @@ Image {
     id: rootItem;
     width: 100;
     height: 100;
-    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/crow.png";
+    source: imageSource+"crow.png";
     property var easingType: Easing.OutBounce;
     opacity: 0;
 

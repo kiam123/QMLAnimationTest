@@ -6,7 +6,7 @@ Flipable {
     width: 240
     height: 240
 
-
+    property var imageSource: ""
     property bool flipped: false
 
     //圖片
@@ -16,7 +16,7 @@ Flipable {
         z: 1;
         height: 50;
         width: 50;
-        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/圖片2.png";
+        source: imageSource+"圖片2.png";
         anchors.centerIn: parent
     }
     back: Image {
@@ -26,7 +26,7 @@ Flipable {
         id: image1;
         height: 50;
         width: 50;
-        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/圖片2.png";
+        source: imageSource+"圖片2.png";
         anchors.centerIn: parent }
 
 //    //文字

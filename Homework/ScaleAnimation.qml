@@ -6,7 +6,7 @@ Image {
     width: 0;
     height: 0;
     anchors.centerIn: parent;
-    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/圖片2.png"
+    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/圖片2.png"
 //    color: "blue";
     property var animation;
 

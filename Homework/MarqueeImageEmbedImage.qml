@@ -22,7 +22,7 @@ Rectangle {
         id: marqueeItem1;
         width: 50;
         height: 30;
-        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow.png";
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow.png";
         x: 10;
         y: 10;
 
@@ -31,7 +31,7 @@ Rectangle {
             width: marqueeItem1.width;
             height: marqueeItem1.height;
             anchors.centerIn: marqueeItem1;
-            source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow-black.png";
+            source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow-black.png";
             opacity: 1;
         }
     }
@@ -40,7 +40,7 @@ Rectangle {
         id: marqueeItem2;
         width: 50;
         height: 30;
-        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow.png";
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow.png";
         x: 70;
         y: 10;
 
@@ -49,7 +49,7 @@ Rectangle {
             width: marqueeItem2.width;
             height: marqueeItem2.height;
             anchors.centerIn: marqueeItem2;
-            source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow-black.png";
+            source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow-black.png";
             opacity: 0;
         }
     }
@@ -58,7 +58,7 @@ Rectangle {
         id: marqueeItem3;
         width: 50;
         height: 30;
-        source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow.png";
+        source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow.png";
         x: 130;
         y: 10;
 
@@ -67,7 +67,7 @@ Rectangle {
             width: marqueeItem3.width;
             height: marqueeItem3.height;
             anchors.centerIn: marqueeItem3;
-            source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/arrow-black.png";
+            source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/arrow-black.png";
             opacity: 0;
         }
     }

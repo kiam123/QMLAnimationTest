@@ -5,7 +5,7 @@ Image {
     id: rect_parallel;
     width: 100;
     height: 100;
-    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/crow.png"
+    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/crow.png"
     ParallelAnimation {
         id: parallel;
         running: true;

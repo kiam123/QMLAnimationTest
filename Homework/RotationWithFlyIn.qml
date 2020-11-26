@@ -5,7 +5,7 @@ Image {
     id: rect_parallel;
     width: 100;
     height: 100;
-    source: "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/family.png";
+    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/family2.png";
     antialiasing: true;
 
     states: State {
