@@ -5,10 +5,9 @@ Image {
     id: rect;
     width: 0;
     height: 0;
-    anchors.centerIn: parent;
-    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/圖片2.png"
-//    color: "blue";
-    property var animation;
+    property alias imageSource: rect.source;
+    property alias imageX: rect.x;
+    property alias imageY: rect.y;
 
     SequentialAnimation {
         running: true;

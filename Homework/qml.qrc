@@ -15,6 +15,39 @@
         <file>ScaleAnimation2.qml</file>
         <file>Flip.qml</file>
         <file>MarqueeImageEmbedImage.qml</file>
+        <file>animation-image/arrow-black.png</file>
+        <file>animation-image/arrow.png</file>
+        <file>animation-image/crow.png</file>
+        <file>animation-image/family.png</file>
+        <file>animation-image/family2.png</file>
+        <file>animation-image/images.jpg</file>
+        <file>animation-image/love.png</file>
+        <file>animation-image/monkey-1.png</file>
+        <file>animation-image/monkey.png</file>
+        <file>animation-image/monkey1-1.png</file>
+        <file>animation-image/start1-1.png</file>
+        <file>animation-image/start1.png</file>
+        <file>animation-image/start2-1.png</file>
+        <file>animation-image/start2.png</file>
+        <file>animation-image/start3.png</file>
+        <file>images/particle.png</file>
+        <file>images/rocket.png</file>
+        <file>images/star.png</file>
+        <file>.gitignore</file>
+        <file>AppearOnetoOneItem.qml</file>
+        <file>Homework.pro</file>
+        <file>ImageEmbedImage.qml.autosave.YTXtuh</file>
+        <file>ImageEmbedImage.qml.fFVwTw</file>
+        <file>images.qrc</file>
+        <file>main.cpp</file>
+        <file>main.qml.PKGmpX</file>
+        <file>MarqueeText.qml.atIAib</file>
+        <file>qml.qrc</file>
+        <file>ScaleAnimation2.qml.oKiXkA</file>
+        <file>ScaleAnimation2.qml.xcwRDX</file>
+        <file>Test2.qml</file>
+        <file>animation-image/cute2.png</file>
+        <file>MarqueeImageEmbedImageItem.qml</file>
     </qresource>
     <qresource prefix="/images"/>
 </RCC>

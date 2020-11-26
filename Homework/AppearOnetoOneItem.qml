@@ -1,8 +1,8 @@
 import QtQuick 2.0
 
 
-Rectangle{
-    property alias imageSourcePath: item1.source;
+Item{
+    property alias imageSource: item1.source;
     property alias imageX: item1.x;
     property alias imageY: item1.y;
     property alias imageZ: item1.z;

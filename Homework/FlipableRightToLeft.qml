@@ -5,29 +5,29 @@ Flipable {
     id: flipable
     width: 240
     height: 240
-
-    property var imageSource: ""
-    property bool flipped: false
+    property bool flipped: false;
+    property alias imageSource: item1.source;
+    property alias imageSource2: item2.source;
 
     //圖片
     front: Image {
+        id: item1;
         x: 0;
         y: 0;
         z: 1;
         height: 50;
         width: 50;
-        source: imageSource+"圖片2.png";
         anchors.centerIn: parent
     }
     back: Image {
+        id: item2;
         x: 0;
         y: 0;
         z: 1;
-        id: image1;
         height: 50;
         width: 50;
-        source: imageSource+"圖片2.png";
-        anchors.centerIn: parent }
+        anchors.centerIn: parent
+    }
 
 //    //文字
 //    front: Text {
@@ -47,15 +47,15 @@ Flipable {
 
     transform: Rotation {
         id: rotation
-        origin.x: flipable.width/2
-        origin.y: flipable.height/2
-        axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-        angle: 0    // the default angle
+        origin.x: flipable.width/2;
+        origin.y: flipable.height/2;
+        axis.x: 0; axis.y: 1; axis.z: 0;     // set axis.y to 1 to rotate around y-axis
+        angle: 0;    // the default angle
     }
 
     states: State {
         name: "back"
-        PropertyChanges { target: rotation; angle: 540 }
+        PropertyChanges { target: rotation; angle: 540; }
         when: flipable.flipped
     }
 
@@ -63,9 +63,10 @@ Flipable {
         SequentialAnimation {
             NumberAnimation { target: rotation; property: "angle"; duration: 4000 }
             NumberAnimation {
-                target: image1;
-                properties: "font.pointSize";
-                to: 100;
+                target: item2;
+//                properties: "font.pointSize";
+                properties: "height, width";
+                to: 140;
                 duration: 200;
             }
         }

@@ -5,8 +5,9 @@ Rectangle {
     id: rect;
     width: 100;
     height: 100;
-    x: parent.width/2 - width/2;
-    y: parent.height/2 - height/2;
+    //x, y 置中
+    x: parent.width / 2 - width / 2;
+    y: parent.height / 2 - height / 2;
     color: Qt.rgba(0.5,0.5,0.5,0)
 
     Text {
@@ -21,8 +22,9 @@ Rectangle {
 
             PropertyAnimation {
                 target: rect1;
-                properties: "font.pointSize"
+                properties: "font.pointSize"; // 放大文字
                 to: 100;
+//                width 和 height 為圖片
 //                properties: "width, height";
 //                to: 150;
                 duration: 400;
@@ -30,8 +32,9 @@ Rectangle {
 
             PropertyAnimation {
                 target: rect1;
-                properties: "font.pointSize"
+                properties: "font.pointSize"; // 放大文字
                 to: 25;
+//                width 和 height 為圖片
 //                properties: "width, height";
 //                to: 50;
                 duration: 400;
@@ -164,6 +167,13 @@ Rectangle {
                     to: rect.y;
                     duration: 200;
                 }
+            }
+
+            PropertyAnimation {
+                target: rect1;
+                properties: "font.pointSize" // 放大文字
+                to: 100;
+                duration: 400;
             }
         }
     }

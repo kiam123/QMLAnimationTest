@@ -20,7 +20,7 @@ Rectangle {
         anchors.centerIn: parent;
         front: Text {
             id: frontText;
-	    z: 1;
+            z: 1;
             text: content[front_img];
             font.bold: true;
             font.pixelSize: 90;
@@ -31,7 +31,7 @@ Rectangle {
 
         back: Text {
             id: backText;
-	    z: 1;
+            z: 1;
             text: content[back_img];
             font.pixelSize: 90;
             font.family: "Arial";

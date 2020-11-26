@@ -4,4 +4,7 @@
         <file>images/rocket.png</file>
         <file>images/star.png</file>
     </qresource>
+    <qresource prefix="/">
+        <file>MarqueeImageEmbedImageItem.qml</file>
+    </qresource>
 </RCC>

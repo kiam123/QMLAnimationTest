@@ -5,6 +5,7 @@ Rectangle {
     width: parent.width;
     height: 75;
     clip:true;
+    color: "transparent"
     anchors.centerIn: parent;
 
     Text

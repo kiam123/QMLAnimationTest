@@ -5,7 +5,8 @@ Image {
     id: rect_parallel;
     width: 100;
     height: 100;
-    source: "/home/krlee/atenProject/uc9020-OSD/themes/core/imports/Theme/Components/images/animation-image/crow.png"
+    property alias imageSource: rect_parallel.source;
+
     ParallelAnimation {
         id: parallel;
         running: true;

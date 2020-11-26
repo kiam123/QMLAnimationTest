@@ -9,7 +9,7 @@ Rectangle {
     Timer {
         id: timer;
         repeat: true;
-        interval: 2000;
+        interval: 300;
         onTriggered: {
             if(count > componentArr.length-1) {
                 count = 0;
