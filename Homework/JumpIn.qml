@@ -3,8 +3,8 @@ import QtQuick 2.0
 // 11.彈跳進來
 Image {
     id: rect_parallel;
-    width: 100;
-    height: 100;
+    width: 400;
+    height: 400;
     property alias imageSource: rect_parallel.source;
 
     ParallelAnimation {

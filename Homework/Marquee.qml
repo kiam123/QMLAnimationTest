@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.3
 
-//跑馬燈
+//跑馬燈-目前沒使用
 Rectangle {
     property var count: 0;
     property var marqueeItems: [marqueeItem1, marqueeItem2, marqueeItem3];

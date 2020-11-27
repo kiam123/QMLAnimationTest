@@ -9,8 +9,8 @@ Item {
 
     Image {
         id: marqueeItem1;
-        width: 50;
-        height: 30;
+        width: 180;
+        height: 160;
 
         Image {
             id: item1;

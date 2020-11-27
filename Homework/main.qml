@@ -69,7 +69,7 @@ Window {
             } else if (event.key === Qt.Key_3) {
                 console.log("3....................");
 //                createComponent("FlipableRightToLeft.qml");
-                image = "file:///D:/QtProjects/QMLAnimationTest/Homework/animation-image/cute2.png";
+                image = "qrc:/animation-image/cute2.png";
                 componentItem = createComponent("FlipableRightToLeft.qml", { "imageSource": image, "imageSource2": image});
             } else if (event.key === Qt.Key_4) {
                 console.log("4....................");

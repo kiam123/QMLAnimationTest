@@ -23,7 +23,7 @@ Rectangle {
             z: 1;
             text: content[front_img];
             font.bold: true;
-            font.pixelSize: 90;
+            font.pixelSize: 130;
             font.family: "Arial";
             color: "black";
             anchors.centerIn: parent;
@@ -33,7 +33,7 @@ Rectangle {
             id: backText;
             z: 1;
             text: content[back_img];
-            font.pixelSize: 90;
+            font.pixelSize: 130;
             font.family: "Arial";
             font.bold: true;
             color: "black";

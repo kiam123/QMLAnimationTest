@@ -6,19 +6,23 @@ Rectangle {
     width: 100;
     height: 100;
     //x, y 置中
-    x: parent.width / 2 - width / 2;
-    y: parent.height / 2 - height / 2;
+//    x: parent.width / 2 - width / 2;
+//    y: parent.height / 2 - height / 2;
+
     color: Qt.rgba(0.5,0.5,0.5,0)
+    property alias scaleAnimation: scaleAnimation
 
     Text {
         id: rect1
         color: "blue";
         anchors.centerIn: rect;
-        text: "有你真好"
+        text: "Nice to have you."
+        z: 1;
 
 
         SequentialAnimation {
-            running: true;
+            id: scaleAnimation;
+            running: false;
 
             PropertyAnimation {
                 target: rect1;

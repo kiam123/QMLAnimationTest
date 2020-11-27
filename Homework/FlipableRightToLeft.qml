@@ -15,8 +15,8 @@ Flipable {
         x: 0;
         y: 0;
         z: 1;
-        height: 50;
-        width: 50;
+        height: 150;
+        width: 150;
         anchors.centerIn: parent
     }
     back: Image {
@@ -24,8 +24,8 @@ Flipable {
         x: 0;
         y: 0;
         z: 1;
-        height: 50;
-        width: 50;
+        height: 150;
+        width: 150;
         anchors.centerIn: parent
     }
 
@@ -66,7 +66,7 @@ Flipable {
                 target: item2;
 //                properties: "font.pointSize";
                 properties: "height, width";
-                to: 140;
+                to: 400;
                 duration: 200;
             }
         }

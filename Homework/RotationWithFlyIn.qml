@@ -7,8 +7,8 @@ Item {
 
     Image {
         id: rect_parallel;
-        width: 100;
-        height: 100;
+        width: 300;
+        height: 300;
         antialiasing: true;
 
         states: State {
@@ -24,12 +24,12 @@ Item {
                 NumberAnimation {
                     target: rect_parallel;
                     properties: "x";
-                    to: 300;
-                    duration: 1000;
+                    to: 600;
+                    duration: 1500;
                 }
 
                 RotationAnimation {
-                    duration: 1000;
+                    duration: 1500;
                     direction: RotationAnimation.Counterclockwise;
                 }
             }

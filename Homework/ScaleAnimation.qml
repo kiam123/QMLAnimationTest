@@ -15,7 +15,7 @@ Image {
             id: enlarge;
             target: rect;
             properties: "width, height";
-            to: 150;
+            to: 400;
             duration: 800;
         }
 
@@ -23,7 +23,7 @@ Image {
             id: shrink;
             target: rect;
             properties: "width, height";
-            to: 100;
+            to: 200;
             duration: 800;
             onDurationChanged: {
                 rect.anchors.centerIn = null;
